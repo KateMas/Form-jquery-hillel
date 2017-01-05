@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form-jquery</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="wrapper-input">
+            <input type="text" placeholder="Имя">
+            <span class="close"></span>
+        </div>
+        <div class="wrapper-input">
+            <input type="email" placeholder="Электронный адрес">
+            <span class="close"></span>
+        </div>
+        <div class="wrapper-input">
+            <input type="tel" placeholder="Телефон">
+            <span class="close"></span>
+        </div>
+        <select id="country" name="country">
+            <option selected>
+                Выберите страну
+            </option>
+            <option value="ua">
+                Украина
+            </option>
+            <option value="ru">
+                Россия
+            </option>
+            <option value="blr">
+                Беларусь
+            </option>
+        </select>
+        <select class="ua-cities" name="ua-cities">
+            <option selected>Одесса</option>
+            <option>Киев</option>
+            <option>Харьков</option>
+            <option>Днепропетровск</option>
+            <option>Львов</option>
+        </select>
+        <select class="ru-cities" name="ru-cities">
+            <option selected>Москва</option>
+            <option>Санкт-Петербург</option>
+            <option>Рязань</option>
+            <option>Владивосток</option>
+            <option>Екатеринбург</option>
+        </select>
+        <select class="blr-cities" name="blr-cities">
+            <option selected>Минск</option>
+            <option>Брест</option>
+            <option>Гродно</option>
+            <option>Гомель</option>
+            <option>Витебск</option>
+        </select>
+        <button>Отправить</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

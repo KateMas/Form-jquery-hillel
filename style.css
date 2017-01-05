@@ -1,0 +1,98 @@
+body {
+    background-color: #eae5e5;
+    font-family: 'Lato', sans-serif;
+}
+form {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 10px;
+    background-color: #d6d3d3;
+    border-radius: 10px;
+    text-align: center;
+}
+    .wrapper-input {
+        display: flex;
+        width: 80%;
+        height: 40px;
+        margin: 10px auto;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .close {
+        position: relative;
+        width: 10%;
+        color: #777676;
+    }
+    .close:hover {
+        color: #e83556;
+    }
+    .close-icon:before {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        content: "x";
+    }
+    input {
+        width: 90%;
+    }
+    input, select {
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        color: #777676;
+    }
+    select {
+        display: block;
+        height: 40px;
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
+    input::-webkit-input-placeholder {
+        color: #777676;
+        transition: .5s;
+    }
+    input::-moz-placeholder {
+        color: #777676;
+        transition: .5s;
+    }
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    input:focus::-moz-placeholder {
+        color: transparent;
+    }
+    input:active, select:active, input:focus, select:focus, input:visited, select:visited {
+        border: none;
+        outline: none;
+    }
+    input {
+        padding-left: 20px;
+    }
+    select {
+        width: 80%;
+        padding-left: 15px;
+    }
+    button {
+        display: inline-block;
+        width: 60%;
+        height: 40px;
+        margin: 20px 0;
+        background-color: #e83556;
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #fff;
+        transition: .5s;
+    }
+    button:hover {
+        background-color: #e82146;
+    }
+    .ua-cities, .ru-cities, .blr-cities {
+        display: none;
+    }
+
+
