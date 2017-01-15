@@ -1,13 +1,5 @@
 $(document).ready(function() {
 
-    $('input').keyup(function(e) {
-        $(this).siblings('span').addClass('close-icon');
-    });
-    $('.close').click(function(e) {
-        $(this).siblings("input").val('');
-        $(this).removeClass('close-icon');
-    });
-
     $('#country').change(function() {
         switch (this.value) {
             case "ua":
@@ -32,4 +24,8 @@ $(document).ready(function() {
                 break;
         }
     });
+    $('.js-input').clearz({
+        right: false
+    });
 })
+
