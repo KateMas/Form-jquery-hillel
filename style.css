@@ -11,6 +11,7 @@ form {
     text-align: center;
 }
     .wrapper-input {
+        position: relative;
         display: flex;
         width: 80%;
         height: 40px;
@@ -19,8 +20,6 @@ form {
         border-radius: 10px;
     }
     .close {
-        position: relative;
-        width: 10%;
         color: #777676;
     }
     .close:hover {
@@ -28,12 +27,17 @@ form {
     }
     .close-icon:before {
         position: absolute;
-        top: 10px;
-        right: 0;
+        top: 0px;
         width: 20px;
         height: 20px;
         cursor: pointer;
         content: "x";
+    }
+    .close-icon-right:before {
+        right: 0;
+    }
+    .close-icon-left:before {
+        left: 0;
     }
     input {
         width: 90%;
@@ -70,6 +74,7 @@ form {
     }
     input {
         padding-left: 20px;
+        padding-right: 20px;
     }
     select {
         width: 80%;
